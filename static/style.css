@@ -1,4 +1,4 @@
-* {
+{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -6,24 +6,24 @@
 
 body {
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 100%;
     background: #F1F1F1;
 }
 
 *, html {
-    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
-    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryGradient: linear-gradient(93.12deg, #28a745 0.52%, #18d26e 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #28a745 -2.14%, #18d26e 99.69%);
     --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
-    --primary: #581B98;
+    --primary: #28a745;
 }
 
 /* CHATBOX
 =============== */
 .chatbox {
     position: absolute;
-    bottom: 30px;
+    bottom: 10px;
     right: 30px;
 }
 
@@ -53,8 +53,8 @@ body {
 }
 
 .send__button {
-    padding: 6px;
-    background: transparent;
+    padding:8px;
+    background: rgb(11, 3, 0);
     border: none;
     outline: none;
     cursor: pointer;
@@ -134,27 +134,27 @@ body {
 
 /* Messages */
 .chatbox__messages {
-    padding: 0 20px;
+    padding: 0 10px;
 }
 
 .messages__item {
     margin-top: 10px;
     background: #E0E0E0;
     padding: 8px 12px;
-    max-width: 70%;
+    max-width: 85%;
 }
 
 .messages__item--visitor,
 .messages__item--typing {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .messages__item--operator {
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
     background: var(--primary);
     color: white;
 }
@@ -177,19 +177,23 @@ body {
     width: 80%;
     border: none;
     padding: 10px 10px;
-    border-radius: 30px;
+    border-radius: 10px;
     text-align: left;
 }
 
 .chatbox__send--footer {
-    color: white;
+    background:  transparent;
+    border-radius: 10px;
 }
-
+.btnsnd{
+    margin: 5px;
+    border-radius: 10px;
+}
 .chatbox__button button,
 .chatbox__button button:focus,
 .chatbox__button button:visited {
     padding: 10px;
-    background: white;
+    background: #28a745;
     border: none;
     outline: none;
     border-top-left-radius: 50px;
